@@ -1,0 +1,213 @@
+:root{
+    --dark-blue: #137db7;
+    --light-blue: #75b3d5;
+    --black: #231f20;
+    --grey: #d1d0d0;
+    --white: #fff;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1040px;
+}
+}
+@media (max-width: 992px){
+    .back-to-top{
+        width: 30px;
+        height: 30px;
+    }
+    /*header*/
+    .menu .navbar-collapse .navbar-nav .nav-link{
+        padding: 20px;
+    }
+    .navbar-light .navbar-nav .nav-link.active, .menu .navbar-collapse .navbar-nav .nav-link:hover{
+        border: none;
+    }
+    .logo{
+        width: 140px;
+    }
+    .logo a{
+        padding-bottom: 28%;
+    }
+    .navbar-light .navbar-toggler{
+        color: var(--dark-blue);
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 0 1px;
+    }
+    .overlay-mb{
+        width: 100%;
+        position: fixed;
+        background-color: hsl(0 0% 90% / 0.5);
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        z-index: 1000;
+        transition: all .1s;
+    }
+    .menu-mb{
+        position: fixed;
+        inset: 0 0 0 30%;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        z-index: 9999;
+        opacity: 0;
+        transition: all .3s;
+        background-color: hsl(0 0% 100% / 0.8);
+        padding: min(15vh, 160px) 32px;
+        backdrop-filter: blur(32px);
+    }
+    .navbar-light .show {
+        right: 0%;
+        opacity: 1;
+    }
+    .img-pro{
+        padding-bottom: 50%;
+    }
+    /*content*/
+    /*slide*/
+    .slide .overlay::before{
+        height: 150px;
+    }
+    .overlay-text h1{
+        font-size: 18px;
+    }
+    .overlay-text .animate-text span{
+        font-size: 30px;
+    }
+    /*about us*/
+    .abt-us-rate{
+        padding-bottom: 20px;
+    }
+    .title h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .line{
+        margin: 20px 0;
+    }
+    .info{
+        padding: 20px 0;
+    } 
+    .about-vt-detail .about-text{
+        padding-bottom: 30px;
+    }
+    .about-img .about1{
+        right: 25%;
+    }
+    .about-img .about2{
+        left: 15%;
+    }
+    .arrow{
+        display: none;
+    }
+    .about-text{
+        padding: 0  ;
+    }
+    .person-vt{
+        margin-bottom: 20px ;
+    }
+    .owl-work .owl-nav .owl-prev{
+        left:  -15px;
+    }
+    .owl-work .owl-nav .owl-next{
+        right: -15px;
+    }
+    .work-title{
+        padding: 30px 0;
+    }
+    .work-detail .title-detail{
+        min-height: 95px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+    .owl-work .item .img-pro{
+        padding-bottom: 80%;
+    }
+    .about-img{
+        width: 700px;
+    }
+    .infomation{
+        background-image: none;
+    }
+    .infomation-item{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767px){
+    /* .owl-work .item .img-pro{
+        padding-bottom: 57%;
+    } */
+    .work-action{
+        padding: 10px 40px;
+    }
+    .space{
+        margin-top: 0;
+    }
+    .address{
+        margin-bottom: 20px;
+    }
+    .img-pro{
+        padding-bottom: 100%;
+    }
+    .ur-img{
+        width: 50%;
+    }
+    .work-title{
+        padding: 40px 0;
+    }
+    .about-img .about1{
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        left: 0;
+     }
+     .about-img{
+         width: 100%;
+         min-height: 300px;
+     }
+     .about-img .about2,.about-img .about3{
+         display: none;
+     }
+     .project-wave{
+        border-bottom-right-radius: unset;
+        border-top-right-radius: unset;
+     }
+     .owl-work{
+         border-radius: unset;
+     }
+     .work-img{
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+    .owl-work .owl-nav button.owl-next,
+    .owl-work .owl-nav button.owl-prev{
+        font-size: 15px;
+        color: var(--white);
+        background-color: #3b98ff;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .work-detail .title-detail{
+        min-height: unset;
+    }
+    .owner-img{
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .sr-item{
+        margin-bottom: 20px;
+    }
+    .sr-item:last-child{
+        margin-bottom: 0;
+    }
+}
