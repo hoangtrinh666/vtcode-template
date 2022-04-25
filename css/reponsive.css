@@ -153,8 +153,14 @@
     .img-pro{
         padding-bottom: 100%;
     }
+    .ur-content{
+        padding: 0 20px;
+    }
+    .ur-content .owl-carousel .owl-stage-outer{
+        padding: unset;
+    }
     .ur-img{
-        width: 50%;
+        width: 100%;
     }
     .work-title{
         padding: 40px 0;

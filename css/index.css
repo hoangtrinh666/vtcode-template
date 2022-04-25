@@ -782,6 +782,9 @@ body{
     font-weight: 700;
     margin-bottom: 10px;
 }
+.item a{
+    text-decoration: none;
+}
 /*Dịch vụ*/
 .service{
     margin-bottom: 15px;
@@ -797,6 +800,10 @@ body{
     padding: 10px;
     border-radius: 5px;
     transition: .5s;
+}
+.service-item a{
+    text-decoration: none;
+    color: var(--black);
 }
 .service-item:hover .item-title h3{
     color: var(--dark-blue);
@@ -1121,6 +1128,7 @@ body{
 .ur-img{
     margin-bottom: 20px;
     width: 100%;
+    min-height: 48px;
 }
 .ur-item .ur-img .img-pro{
     padding-bottom: 20%;
@@ -1375,7 +1383,7 @@ body{
     text-decoration: none;
     color: var(--white);
     font-size: var(--font-size-text);
-    font-weight: 700;
+    font-weight: 500;
 
 }
 /*footer*/
