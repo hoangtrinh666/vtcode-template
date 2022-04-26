@@ -1,289 +1,14 @@
-
-/* @font-face {
-    font-family: 'Roboto Cn';
-    src: url('../font/Roboto-BoldCondensedItalic.eot');
-    src: url('../font/Roboto-BoldCondensedItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-BoldCondensedItalic.woff2') format('woff2'),
-        url('../font/Roboto-BoldCondensedItalic.woff') format('woff'),
-        url('../font/Roboto-BoldCondensedItalic.ttf') format('truetype'),
-        url('../font/Roboto-BoldCondensedItalic.svg#Roboto-BoldCondensedItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Black.eot');
-    src: url('../font/Roboto-Black.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Black.woff2') format('woff2'),
-        url('../font/Roboto-Black.woff') format('woff'),
-        url('../font/Roboto-Black.ttf') format('truetype'),
-        url('../font/Roboto-Black.svg#Roboto-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Bold.eot');
-    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Bold.woff2') format('woff2'),
-        url('../font/Roboto-Bold.woff') format('woff'),
-        url('../font/Roboto-Bold.ttf') format('truetype'),
-        url('../font/Roboto-Bold.svg#Roboto-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-BlackItalic.eot');
-    src: url('../font/Roboto-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-BlackItalic.woff2') format('woff2'),
-        url('../font/Roboto-BlackItalic.woff') format('woff'),
-        url('../font/Roboto-BlackItalic.ttf') format('truetype'),
-        url('../font/Roboto-BlackItalic.svg#Roboto-BlackItalic') format('svg');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Cn';
-    src: url('../font/Roboto-BoldCondensed.eot');
-    src: url('../font/Roboto-BoldCondensed.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-BoldCondensed.woff2') format('woff2'),
-        url('../font/Roboto-BoldCondensed.woff') format('woff'),
-        url('../font/Roboto-BoldCondensed.ttf') format('truetype'),
-        url('../font/Roboto-BoldCondensed.svg#Roboto-BoldCondensed') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-BoldItalic.eot');
-    src: url('../font/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-BoldItalic.woff2') format('woff2'),
-        url('../font/Roboto-BoldItalic.woff') format('woff'),
-        url('../font/Roboto-BoldItalic.ttf') format('truetype'),
-        url('../font/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Italic.eot');
-    src: url('../font/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Italic.woff2') format('woff2'),
-        url('../font/Roboto-Italic.woff') format('woff'),
-        url('../font/Roboto-Italic.ttf') format('truetype'),
-        url('../font/Roboto-Italic.svg#Roboto-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-Italic.eot');
-    src: url('../font/RobotoCondensed-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-Italic.woff2') format('woff2'),
-        url('../font/RobotoCondensed-Italic.woff') format('woff'),
-        url('../font/RobotoCondensed-Italic.ttf') format('truetype'),
-        url('../font/RobotoCondensed-Italic.svg#RobotoCondensed-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-BoldItalic.eot');
-    src: url('../font/RobotoCondensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-BoldItalic.woff2') format('woff2'),
-        url('../font/RobotoCondensed-BoldItalic.woff') format('woff'),
-        url('../font/RobotoCondensed-BoldItalic.ttf') format('truetype'),
-        url('../font/RobotoCondensed-BoldItalic.svg#RobotoCondensed-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-Regular.eot');
-    src: url('../font/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-Regular.woff2') format('woff2'),
-        url('../font/RobotoCondensed-Regular.woff') format('woff'),
-        url('../font/RobotoCondensed-Regular.ttf') format('truetype'),
-        url('../font/RobotoCondensed-Regular.svg#RobotoCondensed-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Light.eot');
-    src: url('../font/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Light.woff2') format('woff2'),
-        url('../font/Roboto-Light.woff') format('woff'),
-        url('../font/Roboto-Light.ttf') format('truetype'),
-        url('../font/Roboto-Light.svg#Roboto-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-Light.eot');
-    src: url('../font/RobotoCondensed-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-Light.woff2') format('woff2'),
-        url('../font/RobotoCondensed-Light.woff') format('woff'),
-        url('../font/RobotoCondensed-Light.ttf') format('truetype'),
-        url('../font/RobotoCondensed-Light.svg#RobotoCondensed-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Cn';
-    src: url('../font/Roboto-Condensed.eot');
-    src: url('../font/Roboto-Condensed.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Condensed.woff2') format('woff2'),
-        url('../font/Roboto-Condensed.woff') format('woff'),
-        url('../font/Roboto-Condensed.ttf') format('truetype'),
-        url('../font/Roboto-Condensed.svg#Roboto-Condensed') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-Bold.eot');
-    src: url('../font/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-Bold.woff2') format('woff2'),
-        url('../font/RobotoCondensed-Bold.woff') format('woff'),
-        url('../font/RobotoCondensed-Bold.ttf') format('truetype'),
-        url('../font/RobotoCondensed-Bold.svg#RobotoCondensed-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('../font/RobotoCondensed-LightItalic.eot');
-    src: url('../font/RobotoCondensed-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/RobotoCondensed-LightItalic.woff2') format('woff2'),
-        url('../font/RobotoCondensed-LightItalic.woff') format('woff'),
-        url('../font/RobotoCondensed-LightItalic.ttf') format('truetype'),
-        url('../font/RobotoCondensed-LightItalic.svg#RobotoCondensed-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Regular.eot');
-    src: url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Regular.woff2') format('woff2'),
-        url('../font/Roboto-Regular.woff') format('woff'),
-        url('../font/Roboto-Regular.ttf') format('truetype'),
-        url('../font/Roboto-Regular.svg#Roboto-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-LightItalic.eot');
-    src: url('../font/Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-LightItalic.woff2') format('woff2'),
-        url('../font/Roboto-LightItalic.woff') format('woff'),
-        url('../font/Roboto-LightItalic.ttf') format('truetype'),
-        url('../font/Roboto-LightItalic.svg#Roboto-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Thin.eot');
-    src: url('../font/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Thin.woff2') format('woff2'),
-        url('../font/Roboto-Thin.woff') format('woff'),
-        url('../font/Roboto-Thin.ttf') format('truetype'),
-        url('../font/Roboto-Thin.svg#Roboto-Thin') format('svg');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-Medium.eot');
-    src: url('../font/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-Medium.woff2') format('woff2'),
-        url('../font/Roboto-Medium.woff') format('woff'),
-        url('../font/Roboto-Medium.ttf') format('truetype'),
-        url('../font/Roboto-Medium.svg#Roboto-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-MediumItalic.eot');
-    src: url('../font/Roboto-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-MediumItalic.woff2') format('woff2'),
-        url('../font/Roboto-MediumItalic.woff') format('woff'),
-        url('../font/Roboto-MediumItalic.ttf') format('truetype'),
-        url('../font/Roboto-MediumItalic.svg#Roboto-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('../font/Roboto-ThinItalic.eot');
-    src: url('../font/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('../font/Roboto-ThinItalic.woff2') format('woff2'),
-        url('../font/Roboto-ThinItalic.woff') format('woff'),
-        url('../font/Roboto-ThinItalic.ttf') format('truetype'),
-        url('../font/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-} */
-
-
-
 :root{
     --dark-blue: #137db7;
     --light-blue: #00fff3;
     --blue-hover: #1899de;
     --fade-blue: #137db77d;
-    --black: #231f20;
+    --black: #252930;
     --grey: #d1d0d0;
-    --dark-grey: #393939;
+    --dark-grey: #5d6778;
     --white: #fff;
-    --light-gey: #f9fbfd;
+    --text-grey: #828d9f;
+    --light-grey: #f5f6fe;
     --orange: #faa732;
     --red: #da4f49;
     --blue: #5472d2;
@@ -295,18 +20,19 @@
     --green:#2EB6FF;
     --font-size-text: 16px;
     --font-size-head: 30px;
-    --font-size-head-2: 24px;
+    --font-size-head-2: 20px;
     --font-size-icon-rate: 25px;
+    --font-size-detail: 18px;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 body{
-    
     background-color: var(--white);
     scroll-behavior:smooth;
 }
@@ -341,14 +67,13 @@ body{
     text-decoration: none;
     padding: 15px 20px;
     border: none;
-    color: var(--black);
+    color: var(--dark-grey);
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 16px;
 }
 .navbar-light .navbar-nav .nav-link.active, .menu .navbar-collapse .navbar-nav .nav-link:hover{
-    color: var(--dark-blue);
-    border-bottom: 2px solid var(--dark-blue);
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
 }
 .logo{
     width: 180px;
@@ -374,6 +99,7 @@ body{
 /*slide*/
 .content{
     position: relative;
+    background-color: var(--light-grey);
 }
 .img-pro{
     position: relative;
@@ -394,6 +120,44 @@ body{
     height: 100%;
     object-fit: cover;  
 }
+.hero-section {
+    background-color: var(--white);
+}
+.site-headline {
+    font-size: 3rem
+}
+.site-tagline {
+    font-size: 1.125rem
+}
+.text-primary {
+    color: #137db7 !important
+}
+.hero-figure {
+    max-width: 100%
+}
+@media(min-width: 768px) {
+    .hero-figure {
+        max-width: 460px
+    }
+}
+
+@media(min-width: 992px) {
+    .hero-figure {
+        max-width: 100%
+    }
+}
+
+@media(max-width: 575.98px) {
+    .site-headline {
+        font-size: 2.5rem
+    }
+    .section-title {
+        font-size: 1.875rem
+    }
+}
+.font-weight-bold {
+    font-weight: 700 !important
+}
 /* .slide::before{
     content: '';
     position: absolute;
@@ -405,7 +169,7 @@ body{
     background-color: #137db7;
     opacity: .7;
 } */
-.slide{
+/* .slide{
     position: relative;
     border-bottom-left-radius: 100% 20%;
     border-bottom-right-radius: 100% 20%;
@@ -433,8 +197,15 @@ body{
     z-index: 11;
     width: 100%;
     text-align: center;
+    padding: 0 30px;
 }
-.overlay-text h1{
+.slide-img .img-pro{
+    padding-bottom: 56%;
+}
+.first-pic .img-pro{
+    padding-bottom: 73%;
+}
+.text-slide h1{
     color: var(--white);
     font-weight: 700;
     font-size: var(--font-size-head-2);
@@ -446,13 +217,13 @@ body{
 .animate-text{
     overflow: hidden;
 }
-.overlay-text .animate-text span{
+.text-slide .animate-text span{
     color: var(--white);
     font-size: 50px;
     font-weight: 900;
     text-transform: uppercase;
     white-space: nowrap;
-    filter: drop-shadow(0 0 5px var(--fade-blue)) drop-shadow(0 0 10px var(--fade-blue));
+    filter: drop-shadow(0 0 5px var(--green)) drop-shadow(0 0 10px var(--green));
     display: none;
 }
 .overlay-text .animate-text span.text-in{
@@ -477,7 +248,7 @@ body{
     100%{
         transform: translateY(-100%);
     }
-}
+} */
 /*Về chúng tôi*/
 .about-us, .service{
     display: flex;
@@ -486,18 +257,23 @@ body{
     flex-wrap: wrap;
     width: 100%;
 }
+.service .title{
+    margin-bottom: 0;
+}
 .title{
     width: 100%;
 }
 .title h1{
     text-align: center;
     text-transform: uppercase;
-    color: var(--dark-blue);
-    font-size: var(--font-size-head);
-    margin: 0;
+    word-spacing: 8px;
+    color: var(--black);
+    font-size: 28px;
+    margin-bottom: 8px;
     font-weight: 700;
+
 }
-.line{
+/* .line{
     height: 1px;
     width: 100%;
     margin:20px 0;
@@ -507,7 +283,7 @@ body{
     width: 30%;
     margin: 0 auto;
     background-color: unset;
-}
+} */
 .info{
     width: 100%;
     background-color: var(--dark-blue);
@@ -560,6 +336,8 @@ body{
     font-size: var(--font-size-text);
     font-weight: 400;
     color: var(--dark-grey);
+    line-height: 1.5;
+
 }
 .about-text p{
     margin-bottom: 10px;
@@ -638,7 +416,7 @@ body{
 .owl-personel .item .person-img{
     margin-bottom: 20px;
 }
-.name-person h4{
+.name-person h3{
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
@@ -769,34 +547,36 @@ body{
 }
 .detail-text{
     text-align: center;
-    color: var(--dark-grey);
-    font-size: var(--font-size-text);
-    margin-bottom: 30px;
-    font-weight: 700;
+    color: var(--text-grey);
+    font-size: var(--font-size-detail);
+    margin-bottom: 36px;
+    font-weight: 400;
 }
 .item-se .img-pro{
     padding-bottom: 80%;
 }
 .item-title h3{
     font-size: var(--font-size-head-2);
-    font-weight: 700;
-    margin-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
 .item a{
     text-decoration: none;
+    width: 100%;
 }
 /*Dịch vụ*/
 .service{
     margin-bottom: 15px;
+    background-color: var(--light-grey);
 }
 .service-content{
     width: 100%;
-    background-color: var(--white);
-    padding:0 0 40px 0;
+    padding:0 0 80px 0;
     position: relative;
 }
 .service-item{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     padding: 10px;
     border-radius: 5px;
     transition: .5s;
@@ -847,7 +627,7 @@ body{
     justify-content: center;
     margin-bottom: 30px;
 }
-.sr-title h4{
+.sr-title h3{
     color: var(--dark-blue);
     font-size: 24px;
     text-transform: uppercase;
@@ -953,7 +733,7 @@ body{
 }
 
 .wave2 .shape-fill {
-    fill: #FFFFFF;
+    fill: #f5f6fe;
 }
 .owl-work{
     background-color: var(--white);
@@ -963,6 +743,9 @@ body{
 .work-slide{
     width: 100%;
     margin-bottom: 40px;
+}
+.work-slide .detail-text{
+    color: var(--white);
 }
 .work-img{
     width: 100%;
@@ -1012,15 +795,19 @@ body{
     border-bottom: 1px solid var(--grey);
 }
 .work-title h3{
-    font-size: var(--font-size-head-2);
-    font-weight: 700;
-    margin-bottom: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: var(--font-size-head-2);
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.work-content:hover .work-title h3{
+    color: var(--dark-blue);
 }
 .work-detail .title-detail{
-    min-height: 160px;
+    min-height: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -1037,16 +824,16 @@ body{
     padding: 3px 8px;
     border-radius: 15px;
     text-decoration: none;
-    font-size: var(--font-size-text);
-    text-transform: uppercase;
+    font-size: var(--font-size-detail);
     color: var(--white);
+    font-weight: 400;
 }
 .right-action a{
     padding: 3px 8px;
     text-decoration: none;
-    font-size: var(--font-size-text);
-    text-transform: uppercase;
-    color: var(--grey);
+    font-size: var(--font-size-detail);
+    font-weight: 400;
+    color: var(--grey); 
 }
 .right-action a:hover{
     color: var(--dark-grey);
@@ -1055,26 +842,26 @@ body{
     background-color: var(--light-purple);
 }
 .light-purple:hover{
-    filter: drop-shadow(0 0 1px var(--light-purple)) drop-shadow(0 0 3px var(--light-purple));
+    background-color: #7c69efdb;
 }
 .pink{
     background-color: var(--pink);
 }
 .pink:hover{
-    filter: drop-shadow(0 0 1px var(--pink)) drop-shadow(0 0 3px var(--pink));
+    background-color: #df4759db;
 }
 .purple-2{
     background-color: var(--purple);
     color: white;
 }
 .purple-2:hover{
-    filter: drop-shadow(0 0 1px var(--purple)) drop-shadow(0 0 3px var(--purple));
+    background-color: #506690b0;
 }
 .yellow{
     background-color: var(--yellow);
 }
 .yellow:hover{
-    filter: drop-shadow(0 0 1px var(--yellow)) drop-shadow(0 0 3px var(--yellow));
+    background-color: #fac534d1;
 }
 .join-us{
     margin: 20px 0;
@@ -1086,79 +873,87 @@ body{
     padding: 10px 15px;
     border-radius: 15px;
     text-decoration: none;
+    text-align: center;
     font-size: var(--font-size-text);
     text-transform: uppercase;
     color: var(--white);
-    font-weight: 700;
+    font-weight: 500;
+    background-color: var(--pink);
+}
+.join-us:hover a{
+    
+
 }
 /*Đối tác*/
 .user-rate{
     width: 100%;
-    background-color:var(--white);
+    background-color:var(--light-grey);
 }
 
 .owl-ur{
     width: 100%;
     margin: 20px 0;
+    box-sizing: border-box;
 }
 /* .ur-content{
     margin: 0 20px 0 0;
 } */
 .ur-content .owl-carousel .owl-stage-outer{
-    padding: 20px;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 .ur-item{
     background-color: var(--white);
-    box-shadow: 5px 5px 10px var(--grey);
     padding: 30px 20px;
     transition: all .5s ease;
-    margin: 20px 0;
     border-radius: 15px;
     border-top: 2px solid;
-    border-top-color: inherit;
+    border-top-color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+}
+.ur-item:hover{
+    border-top-color: inherit;
 }
 .ur-item:hover{
     box-shadow: 5px 5px 10px var(--fade-blue);
-    transform: scale(1.1);
+    transform: translateY(-10px);
 }
 .ur-img{
     margin-bottom: 20px;
     width: 100%;
-    min-height: 48px;
 }
 .ur-item .ur-img .img-pro{
     padding-bottom: 20%;
     object-fit: contain;
 }
-.slide-title h4{
+.slide-title h3{
     text-align: center;
-    color: var(--black);
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    min-height: 66px;
+    color: var(--black);    
+    font-size: var(--font-size-head-2);
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    min-height: 55px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
 }
 .see-more{
     display: flex;
     justify-content: center;
 }
 .see-more a{
-    color: inherit;
+    color: black;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 400;
     font-size: var(--font-size-text);
 }
-.see-more a:hover{
-    filter: drop-shadow(0 0 1px #d6d6d6) drop-shadow(0 0 3px #d6d6d6);
+.ur-item:hover .see-more a{
+    color: inherit;
 }
 /*Đội ngũ*/
 .team{
@@ -1175,7 +970,6 @@ body{
     margin-bottom: 20px;
     transition: all .5s ease;
     background-color: var(--white);
-    box-shadow: 5px 5px 10px var(--grey); 
 }
 .team-item:hover{
     transform: translateY(-10px);
@@ -1202,12 +996,13 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.team-title h4{
+.team-title h3{
     text-align: center;
     color: inherit;
-    font-weight: 700;
     font-size: var(--font-size-head-2);
-    margin-bottom: 5px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
 .team-title p{
     text-align: center;
@@ -1267,7 +1062,7 @@ body{
     padding: 30px 0;
     border-bottom: 1px solid var(--grey);
 }
-.infoitem-title h4{
+.infoitem-title h3{
     font-size: var(--font-size-head-2);
     color: var(--black);
     font-weight: 700;
@@ -1281,7 +1076,7 @@ body{
 .infomation-item:hover{
     transform: translateY(-10px);
 }
-.infomation-item:hover .infoitem-title h4{
+.infomation-item:hover .infoitem-title h3{
     color: var(--dark-blue);
 }
 .infoitem-title p{
@@ -1314,7 +1109,7 @@ body{
     background-color: var(--green);
 }
 .footer-top{
-    background-color: var(--white);
+    background-color: var(--light-grey);
     padding-top: 40px;
     border-bottom-left-radius: 100% 20%;
     border-bottom-right-radius: 100% 20%;
@@ -1322,7 +1117,7 @@ body{
 }
 .contact-work{
     background-color: var(--white);
-    border: 2px solid var(--dark-blue);
+    border-top: 2px solid var(--dark-blue);
     border-radius: 15px;
     padding: 30px;
     transform: translateY(0%);
@@ -1400,7 +1195,7 @@ body{
     color: var(--white);
 
 }
-.address h4{
+.address h3{
     font-size: var(--font-size-head-2);
     font-weight: 700;
     color: var(--white);
