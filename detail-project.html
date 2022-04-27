@@ -45,7 +45,34 @@
         </div>
     </header>
     <div class="content">
-        
+        <div class="detail-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-0 col-md-4">
+                        <div class="pro-left">
+                            <div class="back-index">
+                                <a href="index.html#4">
+                                    <i class="fas fa-arrow-left"></i> Dự án
+                                </a>
+                            </div>
+                            <div class="list-project">
+                                <ul>
+                                    <li><a href="detail-project.html">Thi công hệ thống mạng công ty Tân Hùng Hải   </a></li>
+                                    <li><a href="detail-project.html">Thi công Datacenter Karaoke ICOOL</a></li>
+                                    <li><a href="detail-project.html">Booth Karaoke</a></li>
+                                    <li><a href="detail-project.html">Android App</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="pro-right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer" id="7">
             <div class="footer-top">
                 <div class="container">
@@ -246,6 +273,20 @@
                 }
             })
         })
+        function onScroll(event){
+                var scrollPos = $(document).scrollTop();
+                $('.navbar-nav a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('.navbar-nav a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else{
+                        currLink.removeClass("active");
+                    }
+                });
+            }
     </script>
 </body>
 
