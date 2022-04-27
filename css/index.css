@@ -221,7 +221,7 @@ body{
 }
 .team-item:hover .team-level{
     opacity: 1;
-    bottom: 20px;
+    bottom: 2git0px;
 }
 .team-item:hover .team-img{
     overflow: hidden;
