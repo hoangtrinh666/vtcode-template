@@ -217,30 +217,34 @@ body{
     z-index: 2;
 }
 .team-item:hover .team-name{
-    transform: translateY(0px);
+    bottom: 50px;
 }
 .team-item:hover .team-level{
     opacity: 1;
-    transform: translateY(0);
+    bottom: 20px;
 }
 .team-item:hover .team-img{
     overflow: hidden;
     transform: scale(1.1);
 }
 .team-level{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
     font-weight: 400;
     font-size: var(--font-size-icon);
     opacity: 0;
-    transform: translateY(30px);
     transition: all ease 1s;
 }
 .team-name{
-    transform: translateY(40px);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
     transition: all ease .5s;
 }
 .team-name h3{
     font-size: var(--font-size-head-2);
-    margin-bottom: 0;
+    margin-bottom: 20px;
     color: var(--white);
 }
 .team-bottom p{
