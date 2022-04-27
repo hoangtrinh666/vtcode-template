@@ -11850,11 +11850,11 @@ a.text-link:hover {
 .social-list li:not(:last-child) {
     margin-right: .875rem
 }
-
+/* 
 .header {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
     background: #fff
-}
+} */
 
 .footer .footer-col {
     font-size: .875rem

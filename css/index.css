@@ -159,7 +159,7 @@ body{
     background-color: var(--light-grey);
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 120px;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 0;
@@ -184,7 +184,7 @@ body{
 }
 /*Dự án*/
 .work, .team, .partner{
-    padding-top: 80px;
+    padding-top: 120px;
     background-color: var(--white);
 }
 .text-center .img-pro{
@@ -373,7 +373,7 @@ body{
 }
 /*about us*/
 .about-us{
-    padding: 80px 0 160px 0;
+    padding: 120px 0 160px 0;
     background-color: var(--white);
 }
 .about-content{

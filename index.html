@@ -18,7 +18,7 @@
 
 <body>
     <header class="header">
-        <div>
+        <div cl>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid menu">
                     <div class="logo">
@@ -836,12 +836,12 @@
                     $(document).on("scroll", onScroll);
                 });
             });
-                    $('.nav-link').click(function () {
-                var hover = $(this).attr('class');
-                $(this).closest('navbar-nav').find('.nav-link').attr('class', hover);
-                $(this).addClass("active");
-                $(this).siblings().removeClass("active");
-            })
+            // $('.nav-link').click(function () {
+            //     var hover = $(this).attr('class');
+            //     $(this).closest('navbar-nav').find('.nav-link').attr('class', hover);
+            //     $(this).addClass("active");
+            //     $(this).siblings().removeClass("active");
+            // })
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 900) {
                     $(".back-to-top").fadeIn();
