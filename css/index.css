@@ -334,8 +334,6 @@ ul li a{
 .footer-top{
     background-color: var(--white);
     padding-top: 80px;
-    border-bottom-left-radius: 100% 20%;
-    border-bottom-right-radius: 100% 20%;
     height: 500px;
 }
 .contact-work{
