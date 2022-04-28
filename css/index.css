@@ -249,6 +249,7 @@ ul li a{
 .team-item:hover .team-level{
     opacity: 1;
     bottom: 20px;
+    transform: rotateX(0deg);
     
 }
 .team-item:hover .team-img{
@@ -267,7 +268,8 @@ ul li a{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     opacity: 0;
-    transition: all ease 1s;
+    transform: rotateX(90deg);
+    transition: all ease .5s;
 }
 .team-name{
     position: absolute;
