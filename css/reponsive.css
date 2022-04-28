@@ -52,6 +52,9 @@
         z-index: 1000;
         transition: all .1s;
     }
+    .logo-footer{
+        margin-top: 20px;
+    }
     .menu-mb{
         position: fixed;
         inset: 0 0 0 30%;
