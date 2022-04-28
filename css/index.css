@@ -328,9 +328,7 @@ ul li a{
     margin: 0;
 }
 /*footer - liên hệ*/
-.footer{
-    background-color: var(--green);
-}
+
 .footer-top{
     background-color: var(--white);
     padding-top: 80px;
