@@ -94,10 +94,10 @@ ul li a{
     font-weight: 700;
     font-size: 16px;
 }
-.navbar-light .navbar-nav .nav-link.active, .menu .navbar-collapse .navbar-nav .nav-link:hover{
-    color: var(--black);
-    border-bottom: 2px solid var(--black);
-}
+    .navbar-light .navbar-nav .nav-link.active, .menu .navbar-collapse .navbar-nav .nav-link:hover{
+        color: var(--black);
+        border-bottom: 2px solid var(--black);
+    }
 .logo{
     width: 180px;
 }
