@@ -11,7 +11,7 @@
     }
 } */
 @media (min-width: 1200px){
-    .hero-section .container, .benefits-section .container, .team .container{
+    .hero-section .container, .benefits-section .container, .team .container, .work-content .container{
         max-width: 1320px;;
     }
     .container {
