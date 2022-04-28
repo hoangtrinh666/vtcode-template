@@ -11,8 +11,8 @@
     }
 } */
 @media (min-width: 1200px){
-    .hero-section .container, .benefits-section .container, .team .container, .work-content .container{
-        max-width: 1320px;;
+    .hero-section .container, .benefits-section .container, .team .container, .work-content .container, .header .container{
+        max-width: 1320px;
     }
     .container {
         max-width: 1140px;
@@ -133,7 +133,13 @@
         padding-bottom: 80%;
     }
     .about-img{
-        width: 700px;
+        display: none;
+    }
+    .about-txt{
+        width: 100%;
+    }
+    .owl-about .about-text{
+        padding: 30px 50px;
     }
     .infomation{
         background-image: none;
@@ -189,7 +195,7 @@
     .service, .work, .team, .partner{
         padding-top: 40px;
     }
-     .about-img{
+    .about-img{
          display: none;
      }
      .about-text div{

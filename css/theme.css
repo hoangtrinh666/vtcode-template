@@ -11955,7 +11955,7 @@ a.text-link:hover {
 }
 
 .site-headline {
-    font-size: 3rem
+    font-size: 2.6rem;
 }
 
 .site-tagline {
@@ -12283,7 +12283,7 @@ a.text-link:hover {
 
 @media(max-width: 575.98px) {
     .site-headline {
-        font-size: 2.5rem
+        font-size: 2rem
     }
     .section-title {
         font-size: 1.875rem
