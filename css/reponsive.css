@@ -10,10 +10,12 @@
         max-width: 1320px;
     }
 } */
-@media (min-width: 1200px){
-    .hero-section .container, .benefits-section .container, .team .container, .work-content .container, .header .container{
+@media (min-width: 1400px){
+    .container{
         max-width: 1320px;
     }
+}
+@media (max-width: 1200px){
     .container {
         max-width: 1140px;
     }
