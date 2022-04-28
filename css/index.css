@@ -18,7 +18,7 @@
     --yellow: #fac534;
     --pink: #df4759;
     --green:#2EB6FF;
-    --font-size-text: 16px;
+    --font-size-text: 17px;
     --font-size-head: 30px;
     --font-size-head-2: 20px;
     --font-size-icon-rate: 25px;
@@ -29,16 +29,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
 }
 a {
     color: var(--dark-blue);
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--white);
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 ul{
     margin: 0;
@@ -53,14 +53,23 @@ ul li a{
 /*header*/
 .header{
     background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 74px;
+    z-index: 1000;
+}
+.site-tagline{
+    font-size: var(--font-size-detail);
+    font-weight: 400;
 }
 .show-menu{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    box-shadow: 1px 1px 10px var(--dark-blue);
+    box-shadow: 1px 1px 10px var(--grey);
 }
 .menu{
     width: 100%;
@@ -113,11 +122,12 @@ ul li a{
 /*slide*/
 .hero-section{
     background-color: var(--white);
-    padding-top: 80px;
+    padding-top: 120px;
 }
 .content{
     position: relative;
     background-color: var(--light-grey);
+    scroll-behavior: smooth;
 }
 .img-pro{
     position: relative;
@@ -156,13 +166,17 @@ ul li a{
 }
 .item-title h3{
     font-size: var(--font-size-head-2);
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 8px;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .item a{
     text-decoration: none;
     width: 100%;
+    font-weight: 700;
 }
 /*Dịch vụ*/
 .service{
@@ -209,12 +223,13 @@ ul li a{
     text-overflow: ellipsis;
 }
 .item-inner .detail-w{
-    min-height: 95px;
+    min-height: 90px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
+    font-size: 15px;
 }
 /*team*/
 .team .owl-carousel .owl-stage-outer{
@@ -235,6 +250,7 @@ ul li a{
 .team-item:hover .team-level{
     opacity: 1;
     bottom: 20px;
+    
 }
 .team-item:hover .team-img{
     overflow: hidden;
@@ -244,8 +260,13 @@ ul li a{
     position: absolute;
     width: 100%;
     bottom: 0px;
-    font-weight: 400;
-    font-size: var(--font-size-icon);
+    font-size: var(--font-size-text);
+    height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     opacity: 0;
     transition: all ease 1s;
 }
@@ -543,4 +564,11 @@ ul li a{
 }
 .back-to-top a{
     color: var(--white);
+}
+/*detail-project*/
+.detail-content{
+    background-color: var(--white);
+}
+.detail-middle{
+    padding-bottom: 100px;
 }

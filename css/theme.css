@@ -36,13 +36,6 @@
 *::after {
     box-sizing: border-box
 }
-
-@media(prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: smooth
-    }
-}
-
 body {
     margin: 0;
     font-size: 1rem;
@@ -245,7 +238,6 @@ pre,
 code,
 kbd,
 samp {
-    font-family: var(--bs-font-monospace);
     font-size: 1em;
     direction: ltr/* rtl:ignore */
     ;
@@ -345,7 +337,6 @@ select,
 optgroup,
 textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit
 }
@@ -6234,7 +6225,6 @@ fieldset:disabled .btn {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -6360,7 +6350,6 @@ fieldset:disabled .btn {
     z-index: 1070;
     display: block;
     max-width: 276px;
-    font-family: var(--bs-font-sans-serif);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -8098,10 +8087,6 @@ fieldset:disabled .btn {
 
 .ps-5 {
     padding-left: 3rem !important
-}
-
-.font-monospace {
-    font-family: var(--bs-font-monospace) !important
 }
 
 .fs-1 {
@@ -11199,7 +11184,6 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: "Poppins", sans-serif;
     color: #252930;
     font-weight: 600
 }
