@@ -207,9 +207,9 @@
                     }), _(this, "options", {
                         strings: null,
                         cursor: "|",
-                        delay: "natural",
+                        delay: 30,
                         pauseFor: 1500,
-                        deleteSpeed: "natural",
+                        deleteSpeed: 1,
                         loop: !1,
                         autoStart: !1,
                         devMode: !1,
