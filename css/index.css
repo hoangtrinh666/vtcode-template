@@ -392,7 +392,8 @@ ul li a{
 .footer-bottom{
     padding-top: 400px;
     width: 100%;
-    background-image: linear-gradient(var(--green),var(--dark-blue));
+    background-color: var(--dark-blue);
+    /* background-image: linear-gradient(var(--white),var(--black)); */
     padding-bottom: 80px;
 }
 .btn a{
