@@ -25,10 +25,7 @@
         padding: 0 3rem;
     }
     .item-team:hover .hv-team, .hv-team:hover{
-        width: 180px;
-        max-height: 300px;
-        top: -300%;
-        right: 50%;
+        display: none;
     }
     .back-to-top{
         width: 30px;
@@ -161,8 +158,7 @@
 }
 @media (max-width: 767px){
     .item-team:hover .hv-team, .hv-team:hover{
-        z-index: 10;
-        top: -340%;
+        display: none;
     }
     /* .owl-work .item .img-pro{
         padding-bottom: 57%;
