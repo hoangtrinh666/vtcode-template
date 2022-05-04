@@ -620,8 +620,8 @@ ul li a{
     bottom: 100%;
     right: 50%;
     transform: translate(50%, 20px);
-    width: 0;
-    max-height: 0;
+    width: 250px;
+    max-height: 400px;
     position: absolute;
     border-radius: 15px;
     box-shadow: 5px 5px 10px var(--fade-blue);
@@ -642,8 +642,6 @@ ul li a{
 .item-team:hover .hv-team, .hv-team:hover{
     opacity: 1;
     transform: translate(50%, -10px);
-    width: 250px;
-    max-height: 400px;
 }
 .item-team:hover .hv-team .img-pro{
     display:block;
