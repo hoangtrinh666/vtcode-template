@@ -21,6 +21,15 @@
     }
 }
 @media (max-width: 992px){
+    .team .container{
+        padding: 0 3rem;
+    }
+    .item-team:hover .hv-team, .hv-team:hover{
+        width: 180px;
+        max-height: 300px;
+        top: -300%;
+        right: 50%;
+    }
     .back-to-top{
         width: 30px;
         height: 30px;
@@ -151,6 +160,10 @@
     }
 }
 @media (max-width: 767px){
+    .item-team:hover .hv-team, .hv-team:hover{
+        z-index: 10;
+        top: -340%;
+    }
     /* .owl-work .item .img-pro{
         padding-bottom: 57%;
     } */

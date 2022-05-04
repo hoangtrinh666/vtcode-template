@@ -60,10 +60,6 @@ ul li a{
     height: 74px;
     z-index: 1000;
 }
-.site-tagline{
-    font-size: var(--font-size-head-2);
-    font-weight: 400;
-}
 .show-menu{
     position: fixed;
     top: 0;
@@ -76,6 +72,11 @@ ul li a{
     display: flex;
     justify-content: space-between;
     margin: 0;
+}
+
+.site-tagline{
+    font-size: var(--font-size-head-2);
+    font-weight: 400;
 }
 .nav-tabs{
     border: none;
@@ -608,4 +609,90 @@ ul li a{
     color: var(--text-grey);
     font-weight: 500;
     font-size: 16px;
+}
+/*team*/
+.item-team{
+    position: relative;
+}
+.hv-team{
+    opacity: 0;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 20px);
+    width: 0;
+    max-height: 0;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px var(--fade-blue);
+    transition: all .5s ease ;
+}
+.item-team .hv-team .img-pro{
+    display: none;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:  unset;
+    border-bottom-right-radius: unset;
+    padding-bottom: 80%;
+    width: 100%;
+    margin-bottom: unset; 
+    transition: all .5s ease;
+}
+.item-team:hover .hv-team, .hv-team:hover{
+    opacity: 1;
+    transform: translate(50%, 10px);
+    width: 250px;
+    max-height: 400px;
+    top: -390%;
+    right: 50%;
+}
+.item-team:hover .hv-team .img-pro{
+    display:block;
+}
+.item-team:hover .hv-team .hv-info{
+    display: block;
+}
+.hv-info{
+    display: none;
+    padding: 15px;
+    background-color: var(--white);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius:  unset;
+    border-top-right-radius: unset;
+    transition: all .5s ease;
+}
+.hv-info h3{
+    color: var(--black);
+    font-size: var(--font-size-head-2);
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hv-info p{
+    font-size: var(--font-size-text);
+    font-weight: 400;
+    color: var(--text-grey);
+    margin-bottom: 0;
+}
+.item-team .img-pro{
+    padding-bottom: 100%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.hv-team::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--white);
 }
