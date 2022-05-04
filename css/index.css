@@ -613,10 +613,11 @@ ul li a{
 /*team*/
 .item-team{
     position: relative;
+    transition: all .5s ease ;
 }
 .hv-team{
     opacity: 0;
-    top: 0;
+    bottom: 100%;
     right: 50%;
     transform: translate(50%, 20px);
     width: 0;
@@ -640,11 +641,9 @@ ul li a{
 }
 .item-team:hover .hv-team, .hv-team:hover{
     opacity: 1;
-    transform: translate(50%, 10px);
+    transform: translate(50%, -10px);
     width: 250px;
     max-height: 400px;
-    top: -390%;
-    right: 50%;
 }
 .item-team:hover .hv-team .img-pro{
     display:block;
