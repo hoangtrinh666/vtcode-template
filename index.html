@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/reponsive.css">
-    
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -980,7 +978,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1206,7 +1203,7 @@
             scrollItems = menuItems.map(function(){
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
-            });
+            })
             $("a").on('click', function(event) {
 
                 // Make sure this.hash has a value before overriding default behavior

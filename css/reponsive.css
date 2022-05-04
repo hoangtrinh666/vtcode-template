@@ -5,11 +5,6 @@
     --grey: #d1d0d0;
     --white: #fff;
 }
-/* @media (min-width: 1400px){
-    .container {
-        max-width: 1320px;
-    }
-} */
 @media (min-width: 1400px){
     .container{
         max-width: 1270px;
@@ -21,11 +16,8 @@
     }
 }
 @media (max-width: 992px){
-    .team .container{
-        padding: 0 3rem;
-    }
     .item-team:hover .hv-team, .hv-team:hover{
-        width: 180px;
+        width: 100px;
         max-height: 300px;
         bottom: 100%;
         right: 50%;
@@ -55,14 +47,16 @@
         box-shadow: 0 0 0 1px;
     }
     .overlay-mb{
-        width: 100%;
         position: fixed;
         background-color: hsl(0 0% 90% / 0.5);
         top: 0;
-        right: -100%;
+        right: 0;
         bottom: 0;
+        left: 0;
+        transform: translateX(100%);
+        opacity: 0;
         z-index: 1000;
-        transition: all .1s;
+        transition: all .5s;
     }
     .logo-footer{
         margin-top: 20px;
@@ -74,17 +68,18 @@
         position: fixed;
         inset: 0 0 0 30%;
         top: 0;
-        right: -100%;
+        right: 0;
         bottom: 0;
+        transform: translateX(100%);
         z-index: 9999;
         opacity: 0;
-        transition: all .3s;
+        transition: all .5s;
         background-color: hsl(0 0% 100% / 0.8);
         padding: min(15vh, 160px) 32px;
         backdrop-filter: blur(32px);
     }
     .navbar-light .show {
-        right: 0%;
+        transform: translateX(0);
         opacity: 1;
     }
     .img-pro{
