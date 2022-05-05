@@ -10,9 +10,13 @@
         max-width: 1270px;
     }
 }
-@media (max-width: 1200px){
+@media (max-width: 1270px){
     .container {
-        max-width: 1140px;
+        max-width: 1024px;
+    }
+    .hv-team{
+        width: 200px;
+        max-height: 300px;
     }
 }
 @media (max-width: 992px){
