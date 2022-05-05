@@ -191,6 +191,13 @@ ul li a{
     margin-bottom: 0;
     padding-bottom: 60px;
 }
+.service-content{
+    background-color: var(--white);
+    padding-top: 80px;
+}
+.service-content .service-item{
+    border: 1px solid #f5f6fe;
+}
 .service-item{
     margin-bottom: 16px;
     padding: 10px;
@@ -582,10 +589,18 @@ ul li a{
 }
 .detail-post .img-pro{
     margin-bottom: 20px;
+    padding-bottom: 55%;
+}
+.content-title{
+    margin-bottom: 20px;
 }
 .content-title h3{
-    margin-bottom: 20px;
     font-size: var(--font-size-head);
+    color: var(--black);
+}
+.content-title p{
+    font-size: var(--font-size-text);
+    color: var(--text-grey);
 }
 .related-post{
     color: var(--black);

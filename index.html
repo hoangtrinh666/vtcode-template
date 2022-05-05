@@ -1249,7 +1249,7 @@
                                         </div>
                                       </div>
                                     <div class="col-12 btn-group">
-                                      <button class="btn btn-primary" type="submit">Gửi</button>
+                                      <a class="btn btn-primary submit-btn" type="submit">Gửi</a>
                                     </div>
                                   </form>
                             </div>
@@ -1335,7 +1335,6 @@
     <script>
         (function () {
             'use strict'
-
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation')
 
@@ -1353,6 +1352,10 @@
                 })
             })()
         $(document).ready(function () {
+            $(".submit-btn").click(function(e){
+                e.preventDefault();
+                event.stopPropagation();
+            })
             var topMenu = $(".navbar-nav"),
             topMenuHeight = topMenu.outerHeight()+15,
             // All list items
