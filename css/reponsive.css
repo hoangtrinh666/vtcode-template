@@ -17,11 +17,7 @@
 }
 @media (max-width: 992px){
     .item-team:hover .hv-team, .hv-team:hover{
-        width: 100px;
-        max-height: 300px;
-        bottom: 100%;
-        right: 50%;
-        z-index: 10;
+        display: none;
     }
     .back-to-top{
         width: 30px;

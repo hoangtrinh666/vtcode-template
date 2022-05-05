@@ -77,6 +77,7 @@ ul li a{
 .site-tagline{
     font-size: var(--font-size-head-2);
     font-weight: 400;
+    color: var(--text-grey);
 }
 .nav-tabs{
     border: none;
@@ -209,6 +210,17 @@ ul li a{
 .service-item:hover,.benefits-section .rounded:hover{
     transform: translateY(-10px);
     box-shadow: 5px 5px 10px var(--fade-blue);
+}
+.service-item .text-link{
+    color: var(--dark-blue);
+    font-size: var(--font-size-text);
+    font-weight: 700;
+}
+.detail-service{
+    margin-bottom: 10px;
+}
+.text-link:hover{
+    color: #2f3be3
 }
 /*Dự án*/
 .work, .team, .partner,.work-content{
