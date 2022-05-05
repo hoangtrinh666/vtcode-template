@@ -1210,59 +1210,48 @@
                                 <div class="cw-title">
                                     <h3 class="mb-2 text-center font-weight-bold section-title">Liên hệ</h3> 
                                 </div>
-                                <form style="width: 100%;">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="floatingInput"
-                                                    placeholder="Họ tên">
-                                                <label for="floatingInput">Họ tên</label>
-                                            </div>
-                                        </div>
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-12">
+                                      <label for="validationCustomName" class="form-label">Họ Tên</label>
+                                      <input type="text" class="form-control" id="validationCustomName" placeholder="Họ tên" required>
+                                      <div class="invalid-feedback">
+                                        Vui lòng nhập họ tên!
+                                      </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="floatingInput"
-                                                    placeholder="Điện thoại">
-                                                <label for="floatingInput">Điện thoại</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="floatingInput"
-                                                    placeholder="Email">
-                                                <label for="floatingInput">Email</label>
-                                            </div>
-                                        </div>
+                                    <div class="col-md-6">
+                                      <label for="validationCustomPhone" class="form-label">Điện thoại</label>
+                                      <input type="text" class="form-control" id="validationCustomPhone" placeholder="Số điện thoại" required>
+                                      <div class="invalid-feedback">
+                                        Vui lòng nhập số điện thoại!
+                                      </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <input type="text" class="form-control" id="floatingInput"
-                                                    placeholder="Chủ đề">
-                                                <label for="floatingInput">Chủ đề</label>
-                                            </div>
+                                    <div class="col-md-6">
+                                      <label for="validationCustomEmail" class="form-label">Email</label>
+                                      <div class="input-group has-validation">
+                                        <input type="text" class="form-control" id="validationCustomEmail" aria-describedby="inputGroupPrepend" placeholder="Email" required>
+                                        <div class="invalid-feedback">
+                                          Vui lòng nhập Email!
                                         </div>
+                                      </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-floating">
-                                                <textarea class="form-control" placeholder="Leave a comment here"
-                                                    id="floatingTextarea2" style="height: 100px"></textarea>
-                                                <label for="floatingTextarea2">Nội dung</label>
-                                            </div>
+                                    <div class="col-md-12">
+                                      <label for="validationCustomTopic" class="form-label">Chủ đề</label>
+                                      <input type="text" class="form-control" id="validationCustomTopic" placeholder="Chủ đề" required>
+                                      <div class="invalid-feedback">
+                                        Vui lòng điền chủ đề!
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="validationCustomContent" class="form-label">Nội dung</label>
+                                        <textarea class="form-control" placeholder="Nội dung" id="validationCustomContent" style="height: 100px" required></textarea>
+                                        <div class="invalid-feedback">
+                                          Vui lòng điền nội dung!
                                         </div>
+                                      </div>
+                                    <div class="col-12 btn-group">
+                                      <button class="btn btn-primary" type="submit">Gửi</button>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="btn-group" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-primary"><a
-                                                        href="#">Gửi</a></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                  </form>
                             </div>
 
                         </div>
@@ -1344,6 +1333,25 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+                    
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
         $(document).ready(function () {
             var topMenu = $(".navbar-nav"),
             topMenuHeight = topMenu.outerHeight()+15,

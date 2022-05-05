@@ -348,7 +348,7 @@ ul li a{
 .footer-top{
     background-color: var(--white);
     padding-top: 80px;
-    height: 500px;
+    height: 600px;
 }
 .contact-work{
     background-color: var(--white);
@@ -364,31 +364,6 @@ ul li a{
 .contact-img .img-pro{
     padding-bottom: 100%;
 }
-.contact-group{
-    width: 100%;
-}
-.cw-title .line hr{
-    width: 100%;
-}
-.form-floating input, .form-floating textarea{
-    width: 100%;
-    padding: 15px 0;
-    border: unset;
-    border-bottom: 2px solid var(--grey);
-    margin-bottom: 20px;
-}
-.form-floating>.form-control:focus{
-    border-bottom: 2px solid var(--dark-blue);
-}
-.form-floating input:focus-visible{
-    border: unset;
-    outline: none;
-}
-.form-control:focus{
-    border: unset;
-    box-shadow: unset;
-    outline: none;
-}
 .btn-group{
     width: 100%;
 }
@@ -399,7 +374,7 @@ ul li a{
     background-color: var(--dark-blue);
     border-color: var(--dark-blue);
 }
-.btn-primary:hover{
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
     background-color: var(--blue-hover);
     border-color: var(--blue-hover);
 }
