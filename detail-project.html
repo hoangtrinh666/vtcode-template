@@ -294,7 +294,7 @@
                                         </div>
                                       </div>
                                     <div class="col-12 btn-group">
-                                      <a class="btn btn-primary submit-btn" type="submit">Gửi</a>
+                                      <button class="btn btn-primary" type="submit">Gửi</button>
                                     </div>
                                   </form>
                             </div>
@@ -376,6 +376,24 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script>
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+                    
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
         $(document).ready(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 900) {
